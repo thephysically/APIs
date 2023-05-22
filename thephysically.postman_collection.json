@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "35276491-629e-476d-966c-44b8f470249a",
+		"name": "thephysically",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sent_mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"j18surana@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/sent_mail.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"sent_mail.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "local_list_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/list_all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"list_all.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "local_list_all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/apiPractice/v1/list_all.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"apiPractice",
+								"v1",
+								"list_all.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"TestJeetesh\",\n            \"email\": \"testUser@gmail.com\",\n            \"mobile\": \"9057516113\",\n            \"status\": \"Active\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Test\",\n            \"email\": \"jeeteshsurana@gmail.com\",\n            \"mobile\": null,\n            \"status\": \"Active\"\n        },\n        {\n            \"id\": 4,\n            \"name\": null,\n            \"email\": \"j18surana@gmail.com\",\n            \"mobile\": null,\n            \"status\": \"Active\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "verify_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"j18surana@gmail.com\",\n    \"otp\" : \"170353\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/verify_otp.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"verify_otp.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_company_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\":1,\n    \"company_name\":\"test\",\n    \"email_address\":\"j18surana@gmail.com\",\n    \"mobile_number\":\"9468832693\",\n    \"pan_number\":\"\",\n    \"gst_number\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/set_company_profile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"set_company_profile.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "set_company_profile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":1,\n    \"company_name\":\"test\",\n    \"email_address\":\"j18surana@gmail.com\",\n    \"mobile_number\":\"9468832693\",\n    \"pan_number\":\"\",\n    \"gst_number\" : \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/apiPractice/v1/set_company_profile.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"apiPractice",
+								"v1",
+								"set_company_profile.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "image_upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/jeeteshsurana/Downloads/WhatsApp Image 2023-03-26 at 3.56.07 PM.jpeg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/image_upload.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"image_upload.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 1,\n    \"company_id\": \"2\",\n    \"company_name\": \"test\",\n    \"gst_number\": \"24IVDPS8458A1ZB\",    \n    \"contact_detail_name\": \"test\",\n    \"contact_detail_mobile_number\": \"9468832693 \",\n    \"location_pin_code\": \"334001\",\n    \"location_country\": \"india\",\n    \"location_state\": \"rajasthan\",\n    \"location_district\": \"bikaner\",\n    \"location_address_line_1\": \"test test 1\",\n    \"location_address_line_2\": \"test test 2\",\n    \"staff_ca_fresher\": \"1\",\n    \"staff_ca_experience\": \"0\",\n    \"staff_graduate_fresher\": \"0\",\n    \"staff_graduate_experience\": \"0\",\n    \"start_date\": \"28-03-2022\",\n    \"end_date\": \"28-03-2023\",\n    \"total_days\": \"2\",\n    \"is_laptop_required\": true,\n    \"is_reimbursement_required\": false,\n    \"reimbursement_amount\": \"\",\n    \"any_comment\": \"\",\n    \"coupon_code\": \"\",\n    \"discount_amount\": \"\",\n    \"profession_fees\": \"4999\",\n    \"convenience_fee\": \"0\",\n    \"platform_fee\": \"0\",\n    \"tax_percentage\": \"18\",\n    \"tax_amount\": \"180\",\n    \"total\": \"4545\",\n    \"status\": \"POST\",\n    \"date_modify\": \"1231231\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/job_post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"job_post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_job_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/get_job_post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"get_job_post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_company_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apiPractice/v1/get_company_profile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiPractice",
+						"v1",
+						"get_company_profile.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/apiPractice/v1/get_company_profile.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/apiPractice/v1/get_company_profile.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"apiPractice",
+								"v1",
+								"get_company_profile.php"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 2,\n        \"company_name\": \"Test\",\n        \"email_address\": \"jeeteshsurana@gmail.com\",\n        \"mobile_number\": \"9468832693\",\n        \"pan_number\": \"cvlps9795n\",\n        \"gst_number\": \"qeqweqweqwq\",\n        \"image_url\": null,\n        \"date_modify\": \"2023-03-27\",\n        \"date_created\": \"2023-03-27\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
